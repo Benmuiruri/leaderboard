@@ -4,14 +4,17 @@
   "description": "A website to add and display players' scores. All data is stored and retrieved from the external Leaderboard API service.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Benmuiruri/leaderboard.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ben Kiarie",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Benmuiruri/leaderboard/issues"
