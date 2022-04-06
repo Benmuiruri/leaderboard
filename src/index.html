@@ -6,5 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Leaderboard</h1>
+    <section id="leaderboard-scores">
+      <div class="display-scores">
+        <div class="display-scores-header">
+          <h2>Recent scores</h2>
+          <button id="refresh" type="button">Refresh</button>
+        </div>
+        <div class="current-scores">
+          <ul class="score-list">
+            <li class="score-light">Name: 100</li>
+            <li class="score-dark">Name: 100</li>
+            <li class="score-light">Name: 100</li>
+            <li class="score-dark">Name: 100</li>
+            <li class="score-light">Name: 100</li>
+            <li class="score-dark">Name: 100</li>
+          </ul>
+        </div>
+      </div>
+      <div class="add-score">
+        <h2 class="add-score-title">Add your score</h2>
+        <form id="add-new-score">
+          <label for="name">
+            <input type="text" id="name" placeholder="Your name" required />
+          </label>
+          <label for="score">
+            <input type="number" id="score" placeholder="Your score" required />
+          </label>
+          <button class="btn-submit" type="submit" value="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
