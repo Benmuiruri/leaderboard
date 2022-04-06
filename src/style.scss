@@ -11,13 +11,14 @@ body {
 
 .page-header {
   font-size: 4em;
-  padding: 1em 0 1em 2em;
+  text-align: center;
+  margin: 1em 0;
 }
 
 .leaderboard {
   display: flex;
   flex-direction: row;
-  padding-left: 10em;
+  justify-content: center;
 }
 
 .display-scores {
@@ -44,6 +45,11 @@ body {
   box-shadow: 0.1rem 0.1rem black;
 }
 
+.btn-refresh:active {
+  background: #008552;
+  transform: translateY(2px);
+}
+
 .current-scores {
   border: 2px solid #000;
 }
@@ -51,14 +57,6 @@ body {
 .score-item {
   list-style-type: none;
   padding: 0.2em;
-}
-
-.score-light {
-  background: #fff;
-}
-
-.score-dark {
-  background: #ddd;
 }
 
 .add-score {

@@ -21,7 +21,6 @@
         </div>
         <div class="current-scores">
           <ul class="score-list">
-            <li class="score-item score-light">Name: 100</li>
           </ul>
         </div>
       </div>
@@ -32,7 +31,7 @@
             <input type="text" id="name" placeholder="Your name" required />
           </label>
           <label for="score">
-            <input type="number" id="score" placeholder="Your score" required />
+            <input type="number" id="score" placeholder="Your score" min="0" required />
           </label>
           <button
             id="add-score"
