@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-header {
+  font-size: 4em;
+  padding: 1em 0 1em 2em;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10em;
+}
+
+.display-scores {
+  margin-right: 2em;
+}
+
+.display-scores-header {
+  display: flex;
+  margin-bottom: 2.5em;
+}
+
+.recent-score-title {
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+.btn-refresh {
+  color: #000;
+  align-items: center;
+  padding: 0 8px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem black;
+}
+
+.current-scores {
+  border: 2px solid #000;
+}
+
+.score-item {
+  list-style-type: none;
+  padding: 0.2em;
+}
+
+.score-light {
+  background: #fff;
+}
+
+.score-dark {
+  background: #ddd;
+}
+
+.add-score {
+  margin-left: 2em;
+}
+
+.add-score-title {
+  font-size: 2em;
+  margin-bottom: 1.3em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-weight: bold;
+  padding: 0.2em;
+  margin-bottom: 1em;
+  border: 2px solid #000;
+}
+
+.btn-submit {
+  color: #000;
+  align-items: center;
+  padding: 0 8px;
+  background: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem black;
+}
