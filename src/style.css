@@ -5,20 +5,43 @@
 }
 
 body {
-  background-color: #fff;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(89, 190, 219, 1) 0%,
+      rgba(57, 158, 190, 1) 49%,
+      rgba(4, 57, 74, 1) 100%
+    );
   font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-header {
   font-size: 4em;
   text-align: center;
   margin: 1em 0;
+  padding-left: 0.5em;
+}
+
+.fa-trophy {
+  font-size: 3.5em;
 }
 
 .leaderboard {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #1c1c1c;
+  border-radius: 20px;
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+  padding: 2em 0;
 }
 
 .display-scores {
@@ -33,6 +56,7 @@ body {
 .recent-score-title {
   font-size: 2em;
   margin-right: 0.5em;
+  color: #fbfbfb;
 }
 
 .btn-refresh {
@@ -43,20 +67,47 @@ body {
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0.1rem 0.1rem black;
+  border-radius: 8px;
 }
 
 .btn-refresh:active {
-  background: #008552;
+  background: #52b7d4;
   transform: translateY(2px);
 }
 
-.current-scores {
-  border: 2px solid #000;
+.score-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fbfbfb;
+  list-style-type: none;
+  padding: 0.6em;
+  background: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(43, 43, 43, 0.568);
+  margin-bottom: 0.5em;
 }
 
-.score-item {
-  list-style-type: none;
-  padding: 0.2em;
+.fa-user-astronaut {
+  font-size: 2.5em;
+  padding-right: 0.5em;
+}
+
+.user-name {
+  text-transform: capitalize;
+  font-size: 1.09em;
+  flex-basis: 70%;
+}
+
+.user-score {
+  color: #46a1c1;
+  font-size: 1.09em;
+}
+
+.loading {
+  color: #fbfbfb;
+  font-size: 2em;
 }
 
 .add-score {
@@ -66,21 +117,26 @@ body {
 .add-score-title {
   font-size: 2em;
   margin-bottom: 1.3em;
+  text-align: center;
+  color: #fbfbfb;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  background-color: #1e4f63;
+  padding: 2em;
+  border-radius: 10px;
 }
 
 input {
   font-family: 'Poppins', sans-serif;
   color: #000;
   font-weight: bold;
-  padding: 0.2em;
+  padding: 0.4em;
   margin-bottom: 1em;
-  border: 2px solid #000;
+  border-radius: 8px;
 }
 
 .btn-submit {
@@ -91,4 +147,10 @@ input {
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0.1rem 0.1rem black;
+  border-radius: 8px;
+}
+
+.btn-submit:active {
+  background: #52b7d4;
+  transform: translateY(2px);
 }
