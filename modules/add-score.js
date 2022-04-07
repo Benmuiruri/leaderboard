@@ -7,7 +7,7 @@ const endPoint = `${URL}/games/${gameID}/scores/`;
 
 const addScore = async () => {
   const response = await fetch(endPoint, {
-    method: 'POST',
+    method: 'POST',git 
     body: JSON.stringify({
       user: userName.value.trim(),
       score: userScore.value.trim(),

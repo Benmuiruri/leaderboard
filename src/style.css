@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #fff;
+ /* background: rgb(89,190,219); */
+background: linear-gradient(90deg, rgba(89,190,219,1) 0%, rgba(57,158,190,1) 49%, rgba(4,57,74,1) 100%);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -19,6 +20,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #1C1C1C;
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
 }
 
 .display-scores {
