@@ -9,7 +9,7 @@ export default async () => {
 
   let leaderBoard = '';
   rankedLeaders.forEach(({ user, score }) => {
-    leaderBoard += `<li class="score-item">${user}: ${score}</li>`;
+    leaderBoard += `<li class="score-item"><i class="fa-solid fa-user-astronaut"></i>${user}: ${score}</li>`;
   });
 
   scoreList.innerHTML = leaderBoard;
