@@ -14,7 +14,10 @@
     <title>Leaderboard</title>
   </head>
   <body>
-    <h1 class="page-header">Leaderboard</h1>
+    <div class="header">
+      <i class="fa-solid fa-trophy"></i>
+      <h1 class="page-header">Leaderboard</h1>
+    </div>
     <section id="leaderboard-scores" class="leaderboard">
       <div class="display-scores">
         <div class="display-scores-header">
@@ -24,8 +27,7 @@
           </button>
         </div>
         <div class="current-scores">
-          <ul class="score-list">
-          </ul>
+          <ul class="score-list"></ul>
         </div>
       </div>
       <div class="add-score">
@@ -35,7 +37,13 @@
             <input type="text" id="name" placeholder="Your name" required />
           </label>
           <label for="score">
-            <input type="number" id="score" placeholder="Your score" min="0" required />
+            <input
+              type="number"
+              id="score"
+              placeholder="Your score"
+              min="0"
+              required
+            />
           </label>
           <button
             id="add-score"
