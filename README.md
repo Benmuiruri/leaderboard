@@ -11,6 +11,10 @@
 
 - **HTML** and **CSS** and **Javascript**
 
+## Live Link
+
+[Leaderboard Live Link](https://benmuiruri.github.io/leaderboard/)
+
 ## Getting Started
 
 To get a local copy up and running follow these setup steps below.
